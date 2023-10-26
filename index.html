@@ -15,14 +15,36 @@
     <body background="background.avif">
         <center>
             <div class="heading btn btn-warning">
-            <h1>AI Ping-Pong</h1>
-            <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
+              <h1>AI Ping-Pong</h1>
+              <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
             </div>
             <span class="stats">
                 <button class="btn btn-info">Start Game</button>
                 <h3 class="btn btn-info"></h3>
             </span>
+            <br> <br>
+            <button class="btn btn-success restartbtn" onclick="restart()">Restart Game</button>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">&times;</button>
+                      <h4>Instructions</h4>
+                    </div>
+                    <div class="modal-body instructionModal">
+                      1. Check your camera <br>
+                      2. Move your right wrist up and down, a red dot should appear on your right wrist <br>
+                      3. Now press the play button <br>
+                      4. The red paddel is your paddel, it will now move as per the up and down movement of your right wrist
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <div></div>
+
+            <div class="footer">Creator: Isha R A</div>
         </center>
     </body>
 </html>
